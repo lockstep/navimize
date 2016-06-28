@@ -32,5 +32,8 @@ module Navimize
 
     # Do not strip out rails functionality
     config.api_only = false
+
+    # Change adapter to JSON
+    ActiveModelSerializers.config.adapter = :json
   end
 end

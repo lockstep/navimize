@@ -1,0 +1,21 @@
+{
+  "name": "navimize",
+  "description": "assets components for Navimize",
+  "main": "",
+  "authors": [
+    "Lockstep Labs"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lockstep/navimize",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}

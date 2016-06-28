@@ -12,7 +12,7 @@ module AuthenticationLogic
       return false
     end
 
-    @current_user = User.find(auth_token[:user_id])
+    @current_user = User.find(auth_token[:id])
   end
 
   def http_token
@@ -26,6 +26,6 @@ module AuthenticationLogic
   end
 
   def token_has_user_id?
-    http_token && auth_token && auth_token[:user_id].to_i
+    http_token && auth_token && auth_token[:id].to_i
   end
 end
