@@ -17,3 +17,6 @@
 /tmp
 .ruby-version
 .ruby-gemset
+
+# Ignore application configuration
+/config/application.yml
