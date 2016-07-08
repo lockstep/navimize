@@ -1,0 +1,27 @@
+dependencies:
+  pre:
+    - pip install --upgrade pip
+    - gem install bundler
+    - pip install awsebcli
+
+  override:
+    - npm install
+    - bundle install --deployment
+test:
+  pre:
+    - echo "--require spec_helper" >> .rspec
+    - echo "--require rails_helper" >> .rspec
+
+database:
+  override:
+    - bundle exec rake db:drop db:create db:migrate --trace:
+        environment:
+          RAILS_ENV: test
+
+deployment:
+  staging:
+    branch: development
+    commands:
+      - bash ./bin/eb_setup
+      - eb use navimize-staging
+      - eb deploy

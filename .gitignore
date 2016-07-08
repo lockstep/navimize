@@ -16,7 +16,6 @@
 !/log/.keep
 /tmp
 node_modules/
-.ruby-version
 .ruby-gemset
 
 # Ignore application configuration

@@ -15,6 +15,13 @@ test:
   <<: *default
   database: navimize_test
 
+staging:
+  <<: *default
+  host:     <%= ENV['DB_HOST'] %>
+  database: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+
 production:
   <<: *default
   database: navimize_production
