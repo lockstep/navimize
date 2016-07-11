@@ -29141,7 +29141,7 @@
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'navbar-brand', href: '#' },
-	            'The App'
+	            'Navimize'
 	          )
 	        ),
 	        _react2.default.createElement(
