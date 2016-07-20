@@ -41,5 +41,9 @@ var config = module.exports = {
         loaders: ['style', 'css', 'sass']
       }
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.EnvironmentPlugin(['NODE_ENV'])
+  ]
 }
